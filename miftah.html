@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localhost</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            width: 100%;
+            height: 56.24px;
+            border-bottom: 1px solid #eaeaea;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 1.5rem;
+            gap: 1rem;
+            font-family: sans-serif;
+            color: #4970ff;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #hero {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #hero p {
+            max-width: 350px;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 160%;
+            color: #949494;
+            margin-bottom: 2rem;
+        }
+
+        #hero h1 {
+            margin-top: 10rem;
+            color: #4970ff;
+            font-size: 48px;
+            margin-bottom: 2rem;
+        }
+
+        #hero #link svg {
+            margin-left: 1rem;
+            margin-bottom: 4rem;
+            color: black;
+        }
+
+        #projects {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 18rem;
+        }
+
+        #projects h3 {
+            color: #4970ff;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        #projects .project-card {
+            width: 300px;
+            text-align: left;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+        }
+
+        #projects .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        #projects #project-container {
+            padding: 0 6rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <p href="#">About</p>
+        <p href="#">Projects</p>
+    </div>
+
+    <div id="hero">
+        <h1>Miftahurrahman</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, porro. Necessitatibus quo, beatae fugit illum
+            doloribus mollitia possimus, aspernatur quos dolorem consectetur inventore provident libero omnis fugiat
+            voluptas, exercitationem facere!</p>
+        <!-- github -->
+        <div id="link">
+            <a href="https://github.com/Miftahurrahman-STEI/portfolio/upload/main"><svg
+                    xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                    </path>
+                </svg></a>
+
+            <!-- facebook -->
+            <a href="https://m.facebook.com/login/?locale=id_ID&refsrc=deprecated"><svg
+                    xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                </svg></a>
+
+            <!-- twitter -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+                </path>
+            </svg>
+
+            <!-- github -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="9" cy="12" r="1"></circle>
+                <circle cx="15" cy="12" r="1"></circle>
+                <path d="M7.5 7.5c3.5 -1 5.5 -1 9 0"></path>
+                <path d="M7 16.5c3.5 1 6.5 1 10 0"></path>
+                <path
+                    d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-1 2.5">
+                </path>
+                <path
+                    d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l1 2.5">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h3>Projects</h3>
+        <div id="project-container">
+            <!-- Google -->
+            <div class="project-card">
+                <img
+                    src="https://9to5google.com/wp-content/uploads/sites/4/2020/10/google-workspace-cover.jpg?quality=82&strip=all">
+                <h2>Google</h2>
+            </div>
+
+            <!-- Instagram -->
+            <div class="project-card">
+                <img src="https://images.bisnis-cdn.com/posts/2021/11/27/1471068/instagram_2021_11_22_04_41_09.jpg">
+                <h2>Instagram</h2>
+            </div>
+
+            <!-- Github -->
+            <div class="project-card">
+                <img src="https://vantura.id/images/blog/gWwHFIrBpNv2wYBqsxGctxkICDUU73ft5nbFumjU.png">
+                <h2>Github</h2>
+            </div>
+
+            <!-- Facebook -->
+            <div class="project-card">
+                <img
+                    src="https://cdn1.katadata.co.id/media/images/thumb/2021/09/20/Ilustrasi_cara_mengganti_nama_Facebook-2021_09_20-17_06_10_1108e1dfb31f28859f0ea5a53c6eb7cd_400x267_thumb.jpg">
+                <h2>Facebook</h2>
+            </div>
+
+            <!-- Twitter -->
+            <div class="project-card">
+                <img
+                    src="https://static.republika.co.id/uploads/images/inpicture_slide/fitur-downvote-di_220205170711-931.jpg">
+                <h2>twitter</h2>
+            </div>
+
+            <!-- Google -->
+            <div class="project-card">
+                <img
+                    src="https://9to5google.com/wp-content/uploads/sites/4/2020/10/google-workspace-cover.jpg?quality=82&strip=all">
+                <h2>Discord</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
